@@ -19,8 +19,8 @@ axiosInstance.interceptors.request.use(
     }
 );
 
-const SignUp = (name, email, phone, address, password) => 
-    axiosInstance.post('/auth/register', { name, email, phone, address, password });
+const SignUp = (name, email, password, phone,) => 
+    axiosInstance.post('/auth/register', { name, email, phone, password });
 
 const SignIn = (email, password) => 
     axiosInstance.post('/auth/login', { email, password });
